@@ -9,11 +9,11 @@ public class Main {
     public static void main(String[] args) {
 
         Operaciones metodos = new Operaciones();
-        double num1 = 20;
-        double num2 = 10;
+        double num1 = 25;
+        double num2 = 2;
         double resultado = metodos.calculadora(Operaciones.RAIZ_CUADRADA, num1, num2);
 
-        System.out.println("El resultado de la suma es: " + resultado);
+        System.out.println("El resultado de la operacion es: " + resultado);
 
     }
 

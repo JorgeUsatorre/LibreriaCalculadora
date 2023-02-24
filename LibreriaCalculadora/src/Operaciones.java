@@ -8,6 +8,7 @@ public class Operaciones {
     static final int DIVISION = 4;
     static final int RAIZ_CUADRADA = 5;
     static final int RAIZ_CUBICA = 6;
+    static final int RAIZ_N = 7;
 
 
 
@@ -48,12 +49,21 @@ public class Operaciones {
                 }catch (Exception e){
                     System.out.println("Error");
                 }
+                break;
             case RAIZ_CUBICA:
                 try{
                     resultado = Math.cbrt(num1);
                 }catch (Exception e){
                     System.out.println("Error");
                 }
+                break;
+            case RAIZ_N:
+                try {
+                    resultado = Math.pow(num1, num2);
+                }catch (Exception e){
+                    System.out.println("Error");
+                }
+                break;
         }
         return resultado;
 }
